@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- kopioitu http://netisto.fi/oppaat/html5/esimerkit/11/04-breakout-game/04-breakout-game.html -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Breakout Game with Canvas animation using requestrAnimFrame</title>
+	<script src="Ball.js"></script>
+	<script src="Paddle.js"></script>
+	<script src="Block.js"></script>
+	<script src="Breakout.js"></script>
+</head>
+
+<body onload="init()">
+<h2>Breakout Game</h2>
+<p> Peliä muokattu:</p>
+    <ul> 
+
+        <li>superpallo: pallo menee kaikkien palikoiden läpi </li>
+        <li>Sivu ilmoittaa kun kaikki palikat on tuhottu (alert)</li>
+        <li>Scoreboard</li>
+        <ul>
+            <li>Pelin aloitusaika </li>
+            <li>Pelien määrä</li>
+            <li>Pelin kesto</li>
+            <li>Pelin pisteet</li>
+        </ul>
+        <li>CSS ei ole toiminnallisuutta joten ulkoasuun ei ole kiinnitetty huomiota</li>
+    </ul>
+<div id="scoreBoard">
+    <h2>Score board </h2>
+</div>
+<div id="scoreBoard2"> </div>
+<div id="scoreBoard3"> </div>
+<div>
+	<canvas id="myCanvas" width="400" height="800" style="border:1px solid #000000;"></canvas> 
+        
+</div>
+
+<div>
+	<button onclick="start_game()" id="startButton">Start a new Game</button>
+</div>
+</body>
+</html>
